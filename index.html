@@ -39,7 +39,73 @@
           <p class="eyebrow reveal">MGIT Hyderabad presents</p>
           <h1 id="hero-title" class="reveal">The future is<br /><span>not binary.</span></h1>
           <p class="hero-copy reveal">Qiskit Fall Fest is a gathering for curious minds ready to explore the strange, beautiful logic of quantum computing.</p>
-          <div class="hero-meta reveal"><span><strong>2026</strong><small>Dates to be announced</small></span><span><strong>MGIT</strong><small>Hyderabad, Telangana</small></span></div>
+          <div class="hero-meta reveal"><span><strong>Oct 24, 2026</strong><small>Target launch date</small></span><span><strong>MGIT</strong><small>Hyderabad, Telangana</small></span></div>
+
+          <!-- Interactive Event Countdown Widget -->
+          <div class="hero-countdown reveal" id="countdown-widget" data-target-date="2026-10-24T09:30:00+05:30" role="region" aria-label="Event Countdown">
+            <div class="countdown-header">
+              <span class="countdown-status">
+                <span class="status-pulse" aria-hidden="true"></span>
+                <span id="countdown-status-text">T-MINUS TO FALL FEST</span>
+              </span>
+              <div class="countdown-actions">
+                <button type="button" class="countdown-chip-btn" id="btn-toggle-units" aria-label="Toggle time display mode" title="Switch between standard and cumulative units">
+                  <span class="chip-icon" aria-hidden="true">⇄</span>
+                  <span id="unit-mode-label">Total Units</span>
+                </button>
+                <a class="countdown-chip-btn" id="btn-add-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Qiskit+Fall+Fest+2026+%E2%80%94+MGIT+Hyderabad&amp;dates=20261024T040000Z/20261025T123000Z&amp;details=Join+Qiskit+Fall+Fest+2026+hosted+by+MGIT+Hyderabad.+Explore+quantum+computing+through+talks%2C+workshops%2C+and+challenges.&amp;location=Mahatma+Gandhi+Institute+of+Technology+(MGIT)%2C+Hyderabad%2C+Telangana" target="_blank" rel="noopener noreferrer" title="Add Qiskit Fall Fest 2026 to Google Calendar">
+                  <span class="chip-icon" aria-hidden="true">+</span>
+                  <span>Calendar</span>
+                </a>
+                <button type="button" class="countdown-chip-btn" id="btn-copy-reminder" aria-label="Copy event reminder" title="Copy event reminder details">
+                  <span class="chip-icon" aria-hidden="true">📋</span>
+                  <span id="copy-btn-text">Remind Me</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="countdown-grid" id="countdown-grid" role="timer" aria-live="off">
+              <div class="countdown-unit-box" id="box-days" data-unit="days" tabindex="0" role="button" aria-label="Days remaining. Click to inspect unit">
+                <div class="countdown-digit" id="count-days">--</div>
+                <div class="countdown-label">Days</div>
+                <div class="countdown-subtext" id="sub-days">until fest</div>
+                <div class="countdown-tooltip" id="tip-days">Click to toggle</div>
+              </div>
+              <div class="countdown-unit-box" id="box-hours" data-unit="hours" tabindex="0" role="button" aria-label="Hours remaining. Click to inspect unit">
+                <div class="countdown-digit" id="count-hours">--</div>
+                <div class="countdown-label">Hours</div>
+                <div class="countdown-subtext" id="sub-hours">in cycle</div>
+                <div class="countdown-tooltip" id="tip-hours">Click to toggle</div>
+              </div>
+              <div class="countdown-unit-box" id="box-minutes" data-unit="minutes" tabindex="0" role="button" aria-label="Minutes remaining. Click to inspect unit">
+                <div class="countdown-digit" id="count-minutes">--</div>
+                <div class="countdown-label">Minutes</div>
+                <div class="countdown-subtext" id="sub-minutes">to mark</div>
+                <div class="countdown-tooltip" id="tip-minutes">Click to toggle</div>
+              </div>
+              <div class="countdown-unit-box" id="box-seconds" data-unit="seconds" tabindex="0" role="button" aria-label="Seconds remaining. Click to inspect unit">
+                <div class="countdown-digit" id="count-seconds">--</div>
+                <div class="countdown-label">Seconds</div>
+                <div class="countdown-subtext" id="sub-seconds">live tick</div>
+                <div class="countdown-tooltip" id="tip-seconds">Click to toggle</div>
+              </div>
+            </div>
+
+            <div class="countdown-progress-container" id="countdown-progress-container" title="Click to view countdown milestone">
+              <div class="countdown-progress-meta">
+                <span>Phase: <strong>Pre-Event Quantum Buildup</strong></span>
+                <span id="countdown-progress-percent">0%</span>
+              </div>
+              <div class="countdown-progress-track">
+                <div class="countdown-progress-fill" id="countdown-progress-bar"></div>
+              </div>
+            </div>
+
+            <div class="countdown-live-message" id="countdown-live-message">
+              ⚛ Qiskit Fall Fest 2026 is LIVE! Join the keynote and sessions now.
+            </div>
+          </div>
+
           <div class="hero-actions reveal"><a class="button registration-link is-pending" data-register-link href="#registration" aria-disabled="true">Registration soon <span>↗</span></a><a class="text-link" href="#programme">Explore the programme <span>↓</span></a></div>
         </div>
         <p class="hero-side-note" aria-hidden="true">01 / Quantum starts here</p>
