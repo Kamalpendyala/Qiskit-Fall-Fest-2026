@@ -2,7 +2,7 @@
   "use strict";
 
   // Replace with the official registration URL when it is available.
-  const registrationUrl = "";
+  const registrationUrl = "https://forms.gle/qY1mLWjjPstbERMT8";
   const header = document.querySelector("[data-header]");
   const toggle = document.querySelector("[data-nav-toggle]");
   const navLinks = document.querySelector("[data-nav-links]");

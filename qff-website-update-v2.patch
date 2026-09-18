@@ -1,0 +1,85 @@
+From 9ddcec2897d308f935296d7651350adee56624f9 Mon Sep 17 00:00:00 2001
+From: Neo <neo@users.noreply.github.com>
+Date: Fri, 18 Sep 2026 09:22:34 +0000
+Subject: [PATCH] Update registration link, venue, contact info, programme, and
+ countdown target date
+
+---
+ assets/js/main.js |  2 +-
+ index.html        | 20 ++++++++++----------
+ 2 files changed, 11 insertions(+), 11 deletions(-)
+
+diff --git a/assets/js/main.js b/assets/js/main.js
+index 2ecf0d1..6980fa7 100644
+--- a/assets/js/main.js
++++ b/assets/js/main.js
+@@ -2,7 +2,7 @@
+   "use strict";
+ 
+   // Replace with the official registration URL when it is available.
+-  const registrationUrl = "";
++  const registrationUrl = "https://forms.gle/qY1mLWjjPstbERMT8";
+   const header = document.querySelector("[data-header]");
+   const toggle = document.querySelector("[data-nav-toggle]");
+   const navLinks = document.querySelector("[data-nav-links]");
+diff --git a/index.html b/index.html
+index 445653c..6184d9c 100644
+--- a/index.html
++++ b/index.html
+@@ -39,10 +39,10 @@
+           <p class="eyebrow reveal">MGIT Hyderabad presents</p>
+           <h1 id="hero-title" class="reveal">The future is<br /><span>not binary.</span></h1>
+           <p class="hero-copy reveal">Qiskit Fall Fest is a gathering for curious minds ready to explore the strange, beautiful logic of quantum computing.</p>
+-          <div class="hero-meta reveal"><span><strong>Oct 24, 2026</strong><small>Target launch date</small></span><span><strong>MGIT</strong><small>Hyderabad, Telangana</small></span></div>
++          <div class="hero-meta reveal"><span><strong>12–14 Oct</strong><small>2026</small></span><span><strong>MGIT</strong><small>Hyderabad, Telangana</small></span></div>
+ 
+           <!-- Interactive Event Countdown Widget -->
+-          <div class="hero-countdown reveal" id="countdown-widget" data-target-date="2026-10-24T09:30:00+05:30" role="region" aria-label="Event Countdown">
++          <div class="hero-countdown reveal" id="countdown-widget" data-target-date="2026-10-12T09:00:00+05:30" role="region" aria-label="Event Countdown">
+             <div class="countdown-header">
+               <span class="countdown-status">
+                 <span class="status-pulse" aria-hidden="true"></span>
+@@ -53,7 +53,7 @@
+                   <span class="chip-icon" aria-hidden="true">⇄</span>
+                   <span id="unit-mode-label">Total Units</span>
+                 </button>
+-                <a class="countdown-chip-btn" id="btn-add-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Qiskit+Fall+Fest+2026+%E2%80%94+MGIT+Hyderabad&amp;dates=20261024T040000Z/20261025T123000Z&amp;details=Join+Qiskit+Fall+Fest+2026+hosted+by+MGIT+Hyderabad.+Explore+quantum+computing+through+talks%2C+workshops%2C+and+challenges.&amp;location=Mahatma+Gandhi+Institute+of+Technology+(MGIT)%2C+Hyderabad%2C+Telangana" target="_blank" rel="noopener noreferrer" title="Add Qiskit Fall Fest 2026 to Google Calendar">
++                <a class="countdown-chip-btn" id="btn-add-calendar" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Qiskit+Fall+Fest+2026+%E2%80%94+MGIT+Hyderabad&amp;dates=20261012T033000Z/20261014T103000Z&amp;details=Three-day+Qiskit+Fall+Fest+2026+hosted+by+MGIT+Hyderabad%3A+expert+lectures%2C+a+hands-on+Qiskit+workshop%2C+and+community+interaction.&amp;location=Mahatma+Gandhi+Institute+of+Technology+(MGIT)%2C+Hyderabad%2C+Telangana" target="_blank" rel="noopener noreferrer" title="Add Qiskit Fall Fest 2026 to Google Calendar">
+                   <span class="chip-icon" aria-hidden="true">+</span>
+                   <span>Calendar</span>
+                 </a>
+@@ -120,11 +120,11 @@
+       </section>
+ 
+       <section class="section programme" id="programme" aria-labelledby="programme-title">
+-        <div class="shell"><p class="eyebrow reveal">02 — Follow the signal</p><div class="section-heading reveal"><h2 id="programme-title">Programme <span>in formation.</span></h2><p>The full schedule will be announced soon. Expect talks, live demonstrations, beginner-friendly labs, and conversations with the people shaping quantum’s next chapter.</p></div>
++        <div class="shell"><p class="eyebrow reveal">02 — Follow the signal</p><div class="section-heading reveal"><h2 id="programme-title">Programme <span>in formation.</span></h2><p>12–14 October 2026, 9:00 AM–4:00 PM. A three-day progression: learn from experts → build and run quantum programs → interact with the wider quantum ecosystem.</p></div>
+           <ol class="programme-list reveal">
+-            <li><span>01</span><div><small>Announcement pending</small><h3>Opening the quantum frontier</h3></div><p>Keynote and festival welcome</p></li>
+-            <li><span>02</span><div><small>Announcement pending</small><h3>From qubits to circuits</h3></div><p>Hands-on Qiskit workshop</p></li>
+-            <li><span>03</span><div><small>Announcement pending</small><h3>Ideas become experiments</h3></div><p>Community sessions and challenges</p></li>
++            <li><span>01</span><div><small>12 Oct · Day 1</small><h3>Expert Lectures</h3></div><p>Sessions by eminent people from industry and academia covering the basics of quantum computing, the quantum landscape, current developments, applications, research directions, and careers.</p></li>
++            <li><span>02</span><div><small>13 Oct · Day 2</small><h3>Hands-on Qiskit Workshop</h3></div><p>Participants learn Qiskit fundamentals, build quantum circuits, and execute quantum programs through guided practical work.</p></li>
++            <li><span>03</span><div><small>14 Oct · Day 3</small><h3>Community Interaction</h3></div><p>Companies, students, researchers, faculty, professionals, and quantum enthusiasts interact, ask questions, exchange ideas, and build connections.</p></li>
+           </ol>
+         </div>
+       </section>
+@@ -145,12 +145,12 @@
+ 
+       <section class="section partners" id="partners" aria-labelledby="partners-title"><div class="shell"><p class="eyebrow reveal">05 — In collaboration</p><h2 id="partners-title" class="reveal">Partners <span>&amp; supporters.</span></h2><div class="partner-wall reveal"><p>Partner announcements<br />coming soon</p><p>Partner announcements<br />coming soon</p><p>Partner announcements<br />coming soon</p></div></div></section>
+ 
+-      <section class="section venue" id="venue" aria-labelledby="venue-title"><div class="shell venue-grid"><div class="reveal"><p class="eyebrow">06 — Find the field</p><h2 id="venue-title">MGIT,<br /><span>Hyderabad.</span></h2><p>Venue and travel details will be announced with the final programme.</p><a class="text-link is-pending" href="#venue" aria-disabled="true">Directions soon <span>↗</span></a></div><div class="map-card reveal" role="img" aria-label="Abstract map illustration for Hyderabad"><span class="map-pin">✦</span><span class="map-line one"></span><span class="map-line two"></span><span class="map-line three"></span><b>HYDERABAD</b><small>MGIT campus / venue to be announced</small></div></div></section>
++      <section class="section venue" id="venue" aria-labelledby="venue-title"><div class="shell venue-grid"><div class="reveal"><p class="eyebrow">06 — Find the field</p><h2 id="venue-title">MGIT,<br /><span>Hyderabad.</span></h2><p>Hosted on campus at Mahatma Gandhi Institute of Technology (MGIT), Hyderabad. Full travel details will be shared with the final programme.</p><a class="text-link" href="https://maps.app.goo.gl/qRfXqBtKrNV8oiUm6" target="_blank" rel="noopener noreferrer">Get directions <span>↗</span></a></div><a class="map-card reveal" href="https://maps.app.goo.gl/qRfXqBtKrNV8oiUm6" target="_blank" rel="noopener noreferrer" aria-label="Open MGIT Hyderabad location in Google Maps"><span class="map-pin">✦</span><span class="map-line one"></span><span class="map-line two"></span><span class="map-line three"></span><b>HYDERABAD</b><small>MGIT campus, Gandipet, Hyderabad</small></a></div></section>
+ 
+-      <section class="registration" id="registration" aria-labelledby="registration-title"><div class="shell registration-inner reveal"><p class="eyebrow">07 — Be part of it</p><h2 id="registration-title">The next leap<br />starts <span>with you.</span></h2><p>Registration details will be shared soon. Follow MGIT’s official channels for the announcement.</p><a class="button button-light registration-link is-pending" data-register-link href="#registration" aria-disabled="true">Registration soon <span>↗</span></a></div></section>
++      <section class="registration" id="registration" aria-labelledby="registration-title"><div class="shell registration-inner reveal"><p class="eyebrow">07 — Be part of it</p><h2 id="registration-title">The next leap<br />starts <span>with you.</span></h2><p>Registration is open. Reserve your spot for Qiskit Fall Fest 2026 at MGIT, Hyderabad.</p><a class="button button-light registration-link is-pending" data-register-link href="#registration" aria-disabled="true">Registration soon <span>↗</span></a></div></section>
+     </main>
+ 
+-    <footer class="footer" id="contact"><div class="shell footer-grid"><div><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><b>QFF</b><em>2026</em></span></a><p>Qiskit Fall Fest 2026<br />Hosted by MGIT, Hyderabad.</p></div><div><p class="footer-label">Connect</p><a class="is-pending" href="#contact" aria-disabled="true">Contact details soon</a><a class="is-pending" href="#contact" aria-disabled="true">Social channels soon</a></div><div><p class="footer-label">Navigate</p><a href="#about">About</a><a href="#programme">Programme</a><a href="#venue">Venue</a></div></div><div class="shell footer-bottom"><span>© 2026 MGIT Hyderabad</span><span>Made for the quantum curious.</span></div></footer>
++    <footer class="footer" id="contact"><div class="shell footer-grid"><div><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><b>QFF</b><em>2026</em></span></a><p>Qiskit Fall Fest 2026<br />Hosted by MGIT, Hyderabad.</p></div><div><p class="footer-label">Connect</p><a href="mailto:skrishnaguhanandnimmagadda_ece2504b8@mgit.ac.in">Student Coordinator (Lead Organiser)<br /><small>skrishnaguhanandnimmagadda_ece2504b8@mgit.ac.in · +91 9642710005</small></a><a href="mailto:ypkumarreddy_ece@mgit.ac.in">Faculty Coordinator<br /><small>ypkumarreddy_ece@mgit.ac.in · +91 9705750777</small></a></div><div><p class="footer-label">Navigate</p><a href="#about">About</a><a href="#programme">Programme</a><a href="#venue">Venue</a></div></div><div class="shell footer-bottom"><span>© 2026 MGIT Hyderabad</span><span>Made for the quantum curious.</span></div></footer>
+     <script src="assets/js/main.js"></script>
+   </body>
+ </html>
+-- 
+2.43.0
+
