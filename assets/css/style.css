@@ -405,3 +405,5 @@
 .setup-download strong{display:block;font:600 15px var(--serif)}
 .setup-download small{display:block;margin-top:4px;color:var(--muted);font-size:11px;line-height:1.4}
 @media(max-width:760px){.setup-grid{grid-template-columns:1fr}}
+
+.speaker-grid .speaker:nth-child(5){grid-column:2}.speaker-grid .speaker:nth-child(6){grid-column:3}@media(max-width:760px){.speaker-grid .speaker:nth-child(5),.speaker-grid .speaker:nth-child(6){grid-column:auto}}
