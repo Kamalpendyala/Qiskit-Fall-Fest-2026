@@ -407,7 +407,17 @@
 @media(max-width:760px){.setup-grid{grid-template-columns:1fr}}
 
 .speaker-grid .speaker:nth-child(5){grid-column:2}.speaker-grid .speaker:nth-child(6){grid-column:3}@media(max-width:760px){.speaker-grid .speaker:nth-child(5),.speaker-grid .speaker:nth-child(6){grid-column:auto}}
-
+/* Esteemed Dignitaries — featured speakers, larger than the standard speaker grid */
+.dignitaries{background:radial-gradient(circle at 50% 0,rgba(155,140,255,.14),transparent 55%),var(--ink)}
+.dignitary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:36px;margin-top:68px;max-width:960px;margin-left:auto;margin-right:auto}
+.dignitary{margin:0}
+.dignitary-portrait{aspect-ratio:4/5;overflow:hidden;position:relative;background:linear-gradient(145deg,#162448,#0d1832);border:1px solid var(--line);border-top:2px solid var(--cyan)}
+.dignitary-portrait img{width:100%;height:100%;display:block;object-fit:cover;object-position:50% 22%}
+.dignitary h3{margin:22px 0 0;font:600 clamp(22px,2.6vw,30px)/1.1 var(--serif);letter-spacing:-.02em}
+.dignitary-role{margin:10px 0 0;color:var(--paper);font-size:14px;line-height:1.45}
+.dignitary-focus{margin:4px 0 0;color:var(--muted);font-size:13px;line-height:1.45}
+.dignitary .speaker-link{margin-top:14px;font-size:12px}
+@media(max-width:760px){.dignitary-grid{grid-template-columns:1fr;gap:44px;margin-top:40px}}
 /* ============================================================
    Sponsor logos — second row of the partner wall
    ============================================================ */
